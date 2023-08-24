@@ -1,0 +1,145 @@
+@import '../../App.scss';
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.viewCustomerDetail-container{
+    width: 100%;
+    height: 100vh;
+    // background-color: $Black ;
+    background-color: rgba(0,0,0,0.3);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    .popup-wrap{
+        width: 410px;
+        border-radius: 15px;
+        background-color: $White;
+        opacity: none;
+        padding: 20px 25px;
+        @media only screen and (max-width: 600px){
+            margin: 0 20px;
+            width: 90%;
+        }
+        .viewCustomer-heading{
+            
+            .heading-wrap{
+                display: flex;
+                justify-content: space-between;
+                margin: 10px 0;
+                h3{
+                    font-family: $Lato-Regular;
+                    font-weight: 600;
+                    font-size: 1.5em;
+                    color: $Black;
+                }
+                img{
+                    cursor: pointer;
+                }
+            }
+        }
+
+            .userProfile{
+             
+                display: flex;
+                margin: 20px 0;
+                img{
+                    width: 80px;
+                }
+                .name-wrap{
+                    display: flex;
+                    align-self: center;
+                    flex-direction: column;
+                    padding: 0 20px;
+                    h3{
+                        font-family: $Lato-Regular;
+                        font-weight: 600;
+                        font-size: 1.25em;
+                        color: $Black;
+                    }
+                    p{
+                        font-family: $Lato-Regular;
+                        font-weight: 500;
+                        font-size: 1em;
+                        color: $Light-gray;
+                    }
+                }
+            }
+            .gmail-wrap{
+                p{
+                    font-family: $Lato-Regular;
+                    font-size: 0.87em;
+                    color: $Black;
+                    font-weight: 500;
+                }
+            }
+            .phone-number{
+                p{
+                    font-family: $Lato-Regular;
+                    font-size: 0.87em;
+                    color: $Black;
+                    font-weight: 500;
+                    margin: 15px 0;
+                }
+            }
+
+            .AmenitiesIncluded-wrap{
+                padding: 20px 0;
+                .heading-wrap{
+                    h2{
+                        font-size: 1.25em;
+                        color: $Black;
+                        font-family: $Lato-Black;
+                        font-weight: 600;
+                        
+
+                    }
+                }
+                .service-wrap{
+                    padding: 20px 0;
+                    gap: 10px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    .RestaurantService-wrap{
+                      
+                        display: flex;
+                        border-radius: 5px;
+                        width: 334px;
+                        height: 58px;
+                        cursor: pointer;
+                       
+                        
+                        .image-wrap{
+                            img{
+                                
+                            }
+                        }
+                        .description-wrap{
+                            padding: 7px 50px 7px 7px;
+                            background-color: $Light-Cream;
+                            border-radius: 0 5px 5px 0;
+                            width: 100%;
+
+                            
+                            p{
+                                font-size: 0.75em;
+                                font-family: $Lato-Black;
+                                color: $Black;
+                            }
+                            span{
+                                font-size: 0.62em;
+                                color: $Light-gray;
+                                font-family: $Lato-Regular;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+        
+
+
+        }
+}

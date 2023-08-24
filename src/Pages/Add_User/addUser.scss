@@ -1,0 +1,161 @@
+@import '../../App.scss';
+*{
+    padding: 0;
+    margin: 0;
+}
+.addUser-container{
+    width: 100%;
+    padding: 25px 15px 25px 25px;
+    @media only screen and (max-width: 768px){
+        padding: 25px;
+    }
+    .usermodule-wrap{
+        width: 100%;
+        h1{
+            padding: 10px 0;
+            font-family: $Lato-Black;
+            font-weight: 700;
+            font-size: 1.5em;
+            color: $Black;
+            letter-spacing: 0.02px;
+        }
+    }
+    .userList-wrap{
+        width: 100%;
+        background-color: $Extream-light-gray;
+        ul{
+            display: flex;
+            li{
+                padding: 20px 10px;
+                color: $Light-gray;
+                font-size: 1em;
+                font-weight: 400;
+                font-family: $Lato-Regular;
+                letter-spacing: 0.02px;
+                cursor: pointer;
+            }
+            img{
+                padding: o 50px;
+            }
+        }
+    }
+    .form-wrap{
+        width: 100%;
+        background-color: $Extream-light-gray;
+        margin: 20px 0 50px 0;
+        
+        padding: 50px 20px ;
+        .form{
+            .label-wrap{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 10px;
+                .label{
+                    font-family: $Lato-Bold;
+                    
+                    font-size: 0.9em;
+                    color: $Black;
+                    margin: 5px 0;
+                    span{
+                        color: $Dark-Red;
+                    }
+                }
+                .input{
+                    // max-width: 525px;
+                    width: 40%;
+                    padding: 10px ;
+                    font-family: $Lato-Regular;
+                    font-weight: 400;
+                    font-size: 0.9em;
+                    color: $Black;
+                    margin: 5px 0;
+                    border: none;
+                    border-radius: 5px;
+                    border: 1px solid $border-color-gray;
+                    @media only screen and (max-width: 768px){
+                        width: 100%;
+                    }
+                }
+            }
+            .status-wrap{
+                .label{
+                    font-family: $Lato-Bold;
+                    
+                    font-size: 0.9em;
+                    color: $Black;
+                    margin: 5px 0;
+                }
+                .active-status{
+                    margin-left: 50px;
+                    padding: 6px 7px;
+                    border-radius: 5px;
+                    border: none;
+                    background-color: #e5ebfb;
+                    color: #003AD2;
+                    font-family: $Lato-Regular;
+                    font-size: 0.9em;
+                    .active{
+                        background-color: #e5ebfb;
+                        color: #003AD2;
+                        padding: 6px 7px;
+                        font-family: $Lato-Regular;
+                        font-size: 0.9em;
+                    }
+                    
+                    
+                    .in-active{
+                        background-color: #ffebeb;
+                        color: #FD3838;
+                        padding: 6px 7px;
+                        font-family: $Lato-Regular;
+                        font-size: 0.9em;
+                    }
+                }
+            }
+            .btn-wrap{
+                padding: 20px 0;
+                display: flex;
+                @media only screen and (max-width: 600px){
+                    display: flex;
+                    flex-direction: column;
+                }
+                .add-btn-wrap{
+                    .add-btn{
+                        padding:10px 30px;
+                        border-radius: 5px;
+                        border: none;
+                        background-color: $Dark-Red;
+                        color: $White;
+                        font-family: $Lato-Light;
+                        font-weight: 400;
+                        font-size: 0.9em;
+                        cursor: pointer;
+                        @media only screen and (max-width: 600px){
+                            width: 100%;
+                        }
+                    }
+                }
+                .cancel-btn-wrap{
+                    .cancel-btn{
+                        padding:10px 30px;
+                        border-radius: 5px;
+                        border: none;
+                        background-color: $White;
+                        color: $Dark-Red;
+                        border: 1px solid $Dark-Red;
+                        font-family: $Lato-Light;
+                        font-weight: 400;
+                        font-size: 0.9em;
+                        cursor: pointer;
+                        margin-left: 20px;
+                        @media only screen and (max-width: 600px){
+                            width: 100%;
+                            margin: 0;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+        }
+    }
+}
+}

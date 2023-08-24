@@ -1,0 +1,26 @@
+@import '../../App.scss';
+*{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+.footer{
+   
+    background-color: $Black;
+    opacity:0.8 ;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .copyright-wrap{
+        p{
+            font-family: $Lato-Light;
+            font-size: 0.87em;
+            letter-spacing: 0.03em;
+            color: $White;
+        }
+    }
+}

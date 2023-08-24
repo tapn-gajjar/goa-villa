@@ -1,0 +1,63 @@
+@import '../../App.scss';
+*{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    height: 100px;
+    width:100%;
+    background-color: $Black;
+    opacity: 0.8;
+    // .h-left{
+    //     width: 20%;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: flex-end;
+        
+    //     .logo-wrap{
+          
+    //         h2{
+    //             color: $White;
+    //             cursor: pointer;
+                
+    //             margin-bottom: 10px;
+    //         }
+    //     }
+    // }
+    .h-right{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        @media only screen and (max-width: 600px){
+            justify-content: center;
+        }
+        .admin-wrap{
+            display: flex;
+            padding: 0 100px 0 0;
+            @media only screen and (max-width: 600px){
+                padding: 0%;
+            }
+            
+            img{
+                margin-right: 10px;
+                cursor: pointer;
+            }
+            
+            h3{
+                color: $White;
+                font-family: $Lato-Black;
+                font-weight: 700;
+                font-size: 1em;
+                letter-spacing: 0.02em;
+                cursor: pointer;
+            }
+        
+        }
+    }
+}

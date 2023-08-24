@@ -1,0 +1,63 @@
+@import '../../App.scss';
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.sidebar
+{
+   
+    height: 100%;
+    // position: relative;
+    
+    .image{
+        background-image: url("../../Assest/images/maxresdefault.png");
+        background-position: 100% 100%;
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        position: relative;
+            .carousel-main{
+                //  margin-left: 20%;
+                // display: flex;
+                // width: 100%;
+                // justify-content: center;
+                height: 100vh;
+                display: grid;
+                align-items: end;
+
+                     .content-wrap{
+                        background: white;
+                        opacity: 0.8;
+                        border-radius: 10px;
+                        width: 100%;
+                        box-sizing: border-box;
+                        padding: 20px;
+                        max-width: 80%;
+                        margin-inline: auto;
+
+                            p{
+                            margin: 10px 0;
+                            font-family: $Lato-Regular;
+                            color: $Light-gray;
+                            font-size: 1em;
+                            }
+                            h1{
+                                font-family: $Lato-Black;
+                                color: $Black;
+                                font-weight: 700;
+                                font-size: 1.9em;
+                            }
+                            .star-wrap{
+                                margin: 10px 0;
+                                display: flex;
+                                img{
+                                    margin-right: 5px;
+                                      }
+                                    }
+                                }
+                            }
+         }
+}
+

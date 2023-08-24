@@ -1,0 +1,119 @@
+@import '../../App.scss';
+*
+{
+    padding: 0%;
+    margin: 0%;
+}
+.reset_password{
+    height: 100vh;
+    //  width: 100%; 
+      @media only screen and (max-width: 830px){
+        display: flex;
+        justify-content: center;
+    }
+    .r-left{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        // border: 1px solid black;
+        flex-direction: column; 
+        padding: 50px;
+        box-sizing: border-box;
+          @media only screen and (max-width: 830px)
+        {
+            width: 80%;
+            
+        }
+        @media only screen and (max-width: 600px)
+        {
+            width: 100%;
+            padding: 10px;
+        }
+        .welcome-wrap{
+            display: flex;
+            align-items: center;
+            h1{
+                font-size: 1.87em;
+                color: $Black;
+                font-weight: 500;
+                font-family: $Lato-Black;
+                color: $Black;
+            }
+            img{
+                margin-left: 10px;
+            }
+        }
+        p{
+            font-weight: 500;
+            font-size: 1.5em;
+            color: $Light-gray;
+            font-family: $Lato-Regular;
+        }
+        .password{
+            margin-top: 50px;
+            label{
+                font-family: $Lato-Black;
+                color: $Black;
+                font-weight: 500;
+                font-size: 1.5em;
+                margin: 10px 0;
+                
+                
+            }
+            input{
+
+                font-family: $Lato-Regular;
+                width: 100%;
+                padding: 12px 20px;
+                margin: 10px 0;
+                display: inline-block;
+                border: 1px solid $border-color-gray;
+                box-sizing: border-box;
+                border-radius: 5px;
+                font-size: 1.12em;
+            }
+        }
+        .c-password{
+            margin-top: 20px;
+            label{
+                font-family: $Lato-Black;
+                color: $Black;
+                font-weight: 500;
+                font-size: 1.5em;
+                margin: 10px 0;
+                
+            }
+            input{
+                 font-family: $Lato-Regular;
+                width: 100%;
+                padding: 12px 20px;
+                margin: 10px 0;
+                display: inline-block;
+                border: 1px solid $border-color-gray;
+                box-sizing: border-box;
+                border-radius: 5px;
+                font-size: 1.12em;
+            }
+        }
+        .reset-btn{
+            font-family: $Lato-Black;
+            background-color: $Dark-Red;
+            color: $White;
+            padding: 14px 20px;
+            margin: 18px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            font-weight: 600;
+            font-size: 1.12em;
+        }
+    }
+    .r-right{
+        width: 50%;
+         @media only screen and (max-width: 830px)
+        {
+            display: none;
+        }
+    }
+}

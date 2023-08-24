@@ -1,0 +1,386 @@
+@import '../../App.scss';
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.viewVilla-container{
+    width: 100%;
+    padding: 25px 15px 25px 25px;
+    .usermodule-wrap{
+        width: 100%;
+        h1{
+            padding: 10px 0;
+            font-family: $Lato-Black;
+            font-weight: 700;
+            font-size: 1.5em;
+            color: $Black;
+            letter-spacing: 0.02px;
+        }
+       }
+       .userList-wrap{
+        width: 100%;
+        background-color: $Extream-light-gray;
+        
+        ul{
+            display: flex;
+            img{
+                padding: o 50px;
+            }
+            li{
+                padding: 20px 10px;
+                color: $Light-gray;
+                font-size: 1em;
+                font-weight: 400;
+                font-family: $Lato-Regular;
+                letter-spacing: 0.02px;
+                cursor: pointer;
+            }
+            
+        }
+       }
+       .villa-section{
+        width: 100%;
+        // height: 100vh;
+        display: flex;
+      
+        gap: 25px;
+        margin-top: 25px;
+        @media screen and (max-width: 1000px){
+            display: flex;
+            flex-direction: column;
+        }
+        .villa-left{
+            width: 70%;
+            // height: 100px;
+            background-color: $Extream-light-gray;
+            padding: 20px;
+            @media screen and (max-width: 1000px){
+                width: 100%;
+            }
+            .housePriceDetail-wrap{
+                width: 100%;
+                display: flex;
+                gap: 20px;
+                @media screen and (max-width: 735px){
+                    display: flex;
+                    flex-direction: column;
+                }
+                .imageDetail{
+                    display: flex;
+                    width: 60%;
+                    @media screen and (max-width: 735px){
+                        width: 100%;
+                    }
+                    @media screen and (max-width: 500px){
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    .img-wrap{
+                        img{}
+                        
+                    }
+                    .containt-wrap{
+                        padding: 10px 0 0 20px;
+                        // padding: 20px;
+                        @media screen and (max-width: 500px){
+                            padding: 20px 0;
+                        }
+                        p{
+                            font-size: 1.12em;
+                            font-family: $Lato-Regular;
+                            font-weight: 600;
+                            color: $Black;
+                        }
+                        .location-wrap{
+                            display: flex;
+                            align-items: center;
+                            margin: 20px 0;
+                            img{
+                                margin-right: 10px;
+                            }
+                            span{
+                                font-size: 0.87em;
+                                font-family: $Lato-Regular;
+                                font-weight: 500;
+                                color: $Light-gray;
+                            }
+                           
+                        }
+                    }
+                }
+                .priceDetail{
+                    width: 40%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    @media screen and (max-width: 735px){
+                        width: 100%;
+                        margin-top: 20px;
+                        height: 250px;
+                    }
+                    .price-wrap{
+                        display: flex;
+                        justify-content: space-between;
+                        p{
+                            font-size: 1.12em;
+                            font-family: $Lato-Regular;
+                            font-weight: 600;
+                            color: $Black;
+                        }
+                        span{
+                            color: $red-font;
+                            font-size: 1.25em;
+                            font-family: $Lato-Regular;
+                            font-weight: 600;
+                        }
+                    }
+                    .rating-wrag{
+                        display: flex;
+                        justify-content: space-between;
+                        p{
+                            font-size: 1.12em;
+                            font-family: $Lato-Regular;
+                            font-weight: 600;
+                            color: $Black;
+                        }
+                        a{
+                            color: $Blue-font;
+                            font-size: 1.25em;
+                            font-family: $Lato-Regular;
+                            font-weight: 600;
+                        }
+
+                    }
+                    .date-wrap{
+                        display: flex;
+                        justify-content: space-between;
+                        p{
+                            font-size: 1.12em;
+                            font-family: $Lato-Regular;
+                            font-weight: 600;
+                            color: $Black;
+                        }
+                        span{
+                            color: $Light-gray;
+                            font-size: 1.25em;
+                            font-family: $Lato-Regular;
+                            font-weight: 600;
+                        }
+                    }
+                    .photo-wrap{
+                        display: flex;
+                        justify-content: space-between;
+                        p{
+                            font-size: 1.12em;
+                            font-family: $Lato-Regular;
+                            font-weight: 600;
+                            color: $Black;
+                        }
+                        a{
+                            color: $Blue-font;
+                            font-size: 1.25em;
+                            font-family: $Lato-Regular;
+                            font-weight: 600;
+                        }
+                    }
+                    .dwldPDF-wrap{
+                        display: flex;
+                        justify-content: space-between;
+                        p{
+                            font-size: 1.12em;
+                            font-family: $Lato-Regular;
+                            font-weight: 600;
+                            color: $Black;
+                        }
+                        a{
+                            color: $Blue-font;
+                            font-size: 1.25em;
+                            font-family: $Lato-Regular;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+            .overView-wrap{
+                width: 100%;
+                padding-right: 200px;
+                @media screen and (max-width: 1000px){
+                    padding: 0;
+                }
+                .heading-wrap{
+                    padding: 20px 0;
+                    h2{
+                        font-family: $Lato-Black;
+                        font-size: 1.25em;
+                        color: $Black;
+                        font-weight: 600;
+                    }
+                    p{
+                        font-weight: $Lato-Light;
+                        color: $Light-gray;
+                        font-size: 0.87em;
+                        font-weight: 400;
+                    }
+                }
+                .discription-wrap{
+                    p{
+                        font-family: $Lato-Regular;
+                        color: $Light-gray;
+                        font-size: 0.87em;
+                        font-weight: 400;
+                        line-height: 28px;
+                        span{
+                            color: $Dark-Red;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .AmenitiesIncluded-wrap{
+                padding: 20px 0;
+                .heading-wrap{
+                    h2{
+                        font-size: 1.25em;
+                        color: $Black;
+                        font-family: $Lato-Black;
+                        font-weight: 600;
+                        
+
+                    }
+                }
+                .service-wrap{
+                    padding: 20px 0;
+                    gap: 10px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    .RestaurantService-wrap{
+                      
+                        display: flex;
+                        border-radius: 5px;
+                        width: 334px;
+                        height: 58px;
+                        cursor: pointer;
+                        
+                        .image-wrap{
+                            img{
+                                
+                            }
+                        }
+                        .description-wrap{
+                            padding: 7px 50px 7px 7px;
+                            background-color: $Light-Cream;
+                            border-radius: 0 5px 5px 0;
+                            width: 100%;
+
+                            
+                            p{
+                                font-size: 0.75em;
+                                font-family: $Lato-Black;
+                                color: $Black;
+                            }
+                            span{
+                                font-size: 0.62em;
+                                color: $Light-gray;
+                                font-family: $Lato-Regular;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+        .villa-right{
+            width: 30%;
+            background-color: $Extream-light-gray;
+            // height: 100px;
+            padding: 20px;
+            @media screen and (max-width: 1000px){
+                width: 100%;
+            }
+            .heading-wrap{
+                h2{
+                    font-size: 1em;
+                    font-family: $Lato-Regular;
+                    font-weight: 600;
+                    color: $Black;
+                }
+            }
+            .booking-section{
+                .booking-box{
+                    background-color: $White;
+                    display: flex;
+                    width: 100%;
+                    margin: 20px 0;
+                    .left-part{
+                        display: flex;
+                        width: 50%;
+                        .image-wrap{
+                            
+                            img{
+                                padding: 10px;
+                                
+                            }
+                        }
+                        .name-wrap{
+                            display: flex;
+                            justify-content: space-evenly;
+                            flex-direction: column;
+                            p{
+                                font-size: 0.87em;
+                                font-family: $Lato-Regular;
+                                color: $Black;
+                                font-weight: 600;
+                            }
+                            .date-wrap{
+                                display: flex;
+                                justify-content: center;
+                                img{
+                                    margin-right: 5px;
+                                }
+                                span{
+                                font-size: 0.62em;
+                                font-family: $Lato-Regular;
+                                color: $Light-gray;
+                                font-weight: 500;
+                                }
+                            }
+                        }
+                    }
+                    .right-part{
+                        width: 50%;
+                        display: flex;
+                        justify-content: flex-end;
+                        .popup-wrap{
+                                display: flex;
+                                 flex-direction: column;
+                                align-items: flex-end;
+                            .cancel{
+                                background-color: $red-cancel-btn;
+                                padding: 5px 10px;
+                                color: $White;
+                                border-radius: 10px 0px 0px 0px;
+                                font-size: 0.75em;
+                                font-family: $Lato-Regular;
+                                width: 75px;
+                                
+                            }
+                            .complete{
+                                background-color:$green-complete-btn;
+                            }
+                            .amount-wrap{
+                              
+                                span{
+                                    color: $Black;
+                                    
+                                    font-size: 0.75em;
+                                    font-family: $Lato-Regular;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+       }
+}

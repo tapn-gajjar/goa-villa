@@ -1,0 +1,250 @@
+@import '../../App.scss';
+*{
+    padding: 0;
+    margin: 0;
+}
+.booking-container{
+    width: 100%;
+    padding: 25px 15px 25px 25px;
+    .usermodule-wrap{
+        width: 100%;
+        h1{
+            padding: 10px 0;
+            font-family: $Lato-Black;
+            font-weight: 700;
+            font-size: 1.5em;
+            color: $Black;
+            letter-spacing: 0.02px;
+        }
+       }
+       .userList-wrap{
+        width: 100%;
+        background-color: $Extream-light-gray;
+        
+        ul{
+            display: flex;
+            img{
+                padding: 0 50px;
+            }
+            li{
+                padding: 20px 10px;
+                color: $Light-gray;
+                font-size: 1em;
+                font-weight: 400;
+                font-family: $Lato-Regular;
+                letter-spacing: 0.02px;
+                cursor: pointer;
+            }
+            
+        }
+       }
+       .addNewSection{
+        width: 100%;
+        padding: 20px 0;
+        display: flex;
+        @media only screen and (max-width: 768px){
+            flex-direction: column;
+        }
+        .left-addNew{
+            width: 50%;
+      
+            display: flex;
+            align-items: center;
+            @media only screen and (max-width: 768px){
+                width: 100%;
+                justify-content: flex-start;
+            }
+            .addNew-btn{
+                padding:10px 20px;
+                border-radius: 5px;
+                border: none;
+                background-color: $Dark-Red;
+                color: $White;
+                font-family: $Lato-Light;
+                font-weight: 400;
+                font-size: 0.9em;
+                cursor: pointer;
+            }
+        }
+        .right-choose{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            @media only screen and (max-width: 768px){
+                width: 100%;
+                justify-content: flex-start;
+                margin-top: 20px;
+            }
+            .sort-wrap{
+               
+                @media only screen and (max-width: 768px){
+                    display: none;
+                }
+                img{}
+                span{
+                    color: $Black;
+                    font-family: $Lato-Light;
+                    font-weight: 400;
+                    font-size: 0.9em;
+                    letter-spacing: 0.02px;
+                    padding: 0 10px;
+                }
+            }
+            .search-wrap{
+                margin: 0 10px;
+                @media only screen and (max-width: 768px){
+                    margin-left: 0;
+                    margin-right:10px ;
+                }
+                
+                input{
+                    padding:     10px 10px;
+                    border-radius: 5px;
+                    border: 1px solid #5D5A6F;
+                    max-width: 352px;
+                    
+                    @media only screen and (max-width: 425px){
+                    width: 100%;
+                    }
+                   
+                }
+               button{
+                position: absolute;
+                
+   
+                
+                img{
+                    position: absolute;
+                    top: 5px;
+                    right: 10px;
+                 }
+               }
+               
+            }
+            .choose-btn{
+                padding:10px 20px;
+                border-radius: 5px;
+                border: none;
+                background-color: $Dark-Red;
+                color: $White;
+                font-family: $Lato-Light;
+                font-weight: 400;
+                font-size: 0.9em;
+                cursor: pointer;
+            }
+        }
+       }
+       .table-section{
+        width: 100%;
+        overflow-x: auto;
+       table{
+        width: 100%;
+        // overflow-x: auto;
+        @media screen and (max-width: 768px){
+            width: 768px;
+            
+        }
+        tr{
+            
+            th{
+                padding: 20px 0;
+                 align-items: center;
+                color: $Black;
+                // font-weight: 300;
+                font-size: 1.1em;
+                border-bottom: 2px solid #E6EAF0;
+                font-family: $Lato-Black;
+                
+            }
+        }
+       tr{
+        td{
+            
+            text-align: center;
+            padding: 20px 0;
+           font-size: 1em;
+           font-weight: 500;
+            color: $Light-gray;
+            align-items: center;
+            border-bottom: 2px solid #E6EAF0;
+            font-family: $Lato-Regular;
+            .status{
+                padding: 6px 7px;
+                border-radius: 5px;
+                border: none;
+                background-color: #e5ebfb;
+                color: #003AD2;
+                font-family: $Lato-Regular;
+                font-size: 0.9em;
+                .pending{
+                    background-color: #e5ebfb;
+                    color: #003AD2;
+                    padding: 6px 7px;
+                    font-family: $Lato-Regular;
+                    font-size: 0.9em;
+                }
+                
+                
+                .complete{
+                    background-color: $green-complete-btn;
+                    color: $White;
+                    padding: 6px 7px;
+                    font-family: $Lato-Regular;
+                    font-size: 0.9em;
+                }
+               
+        }
+       
+       }
+       .img{
+        
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        cursor: pointer;
+       }
+  
+
+
+       }
+       
+       }
+       .showingPage-wrap{
+        width: 100%;
+        display: flex;
+        padding: 30px 0;
+        .page-left{
+            width: 50%;
+            span{
+               
+                font-size: 0.9em;
+                font-weight: 400;
+                font-family: $Lato-Regular;
+                color:$Light-gray ;
+            }
+        }
+        .page-right{
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            span{
+               
+                font-size: 0.9em;
+                font-weight: 400;
+                font-family: $Lato-Regular;
+                color:$Light-gray ;
+            }
+            img{
+                margin: 0 10px;
+                width: 7px;
+                
+            }
+        }
+    }
+    }
+    ::-webkit-scrollbar{
+        width: 0px;
+    }
+    }

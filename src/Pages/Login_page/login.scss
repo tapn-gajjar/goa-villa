@@ -1,0 +1,155 @@
+@import '../../App.scss';
+
+*
+{
+    padding: 0%;
+    margin: 0%;
+}
+.login{
+    height: 100vh;
+    // width: 100%;  
+    @media only screen and (max-width: 830px){
+        display: flex;
+        justify-content: center;
+    }
+    
+    .l-left{
+        width: 50%;
+        // height: 100%;
+        display: flex;
+        justify-content: center;
+        // border: 1px solid black;
+        flex-direction: column; 
+        padding: 50px;
+        box-sizing: border-box;
+        // justify-content: space-evenly;
+        @media only screen and (max-width: 830px)
+        {
+            width: 80%;
+            
+        }
+        @media only screen and (max-width: 600px)
+        {
+            width: 100%;
+            padding: 10px;
+        }
+        .welcome-wrap{
+            display: flex;
+            align-items: center;
+           
+           
+            h1{
+                
+                color: $Black;
+                font-weight: 500;
+                font-family: $Lato-Bold;
+                font-size: 1.87em;
+            }
+            img{
+                margin-left: 10px;
+            }
+        }
+        p{
+           font-size: 1.5em;
+            font-weight: 500;
+            font-size: 1.5em;
+            color: $Light-gray;
+            font-family: $Lato-Regular;
+            
+        }
+        .email{
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            label{
+                font-family: $Lato-Black;
+                color: $Black;
+                font-weight: 500;
+                font-size: 1.5em;
+                margin: 10px 0;
+            }
+            input{
+                font-family: $Lato-Regular;
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                box-sizing: border-box;
+                border-radius: 5px;
+                font-size: 1.12em;
+                border: 1px solid $border-color-gray;
+            }
+        }
+        .password{
+            display: flex;
+            flex-direction: column;
+            label{
+                font-family: $Lato-Black;
+                color: $Black;
+                font-weight: 500;
+                font-size: 1.5em;
+                margin: 10px 0;
+            }
+            input{
+                font-family: $Lato-Regular;
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                
+                box-sizing: border-box;
+                border-radius: 5px;
+                font-size: 1.12em;
+                border: 1px solid $border-color-gray;
+            }
+        }
+        .forgot-wrap{
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            @media only screen and (max-width: 430px)
+            {
+            //    flex-direction: column;
+            }
+            .remember-wrap{
+                display: flex;
+                img{
+                    margin-right: 10px;
+                }
+                h3{
+                    font-weight: 600;
+                    font-size: 1.12em;
+                    color:$Black;
+                    font-family: $Lato-Regular;
+                }
+            }
+            .forgot-pass{
+                h3{
+                    font-weight: 700;
+                    font-size: 1.12em;
+                    color: $Black;
+                    font-family: $Lato-Black;
+                }
+            }
+        }
+        .login-btn{
+            font-family: $Lato-Black;
+            background-color:$Dark-Red;
+            color: $White;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1.12em;
+        }
+    }
+    .l-right{
+        width: 50%;
+        @media only screen and (max-width: 830px)
+        {
+            display: none;
+        }
+    }
+   
+}

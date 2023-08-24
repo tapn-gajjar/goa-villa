@@ -1,0 +1,340 @@
+@import '../../App.scss';
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.addVilla-container{
+    width: 100%;
+    padding: 25px 15px 25px 25px;
+    @media only screen and (max-width: 768px){
+        padding: 25px;
+    }
+    .usermodule-wrap{
+        width: 100%;
+        h1{
+            padding: 10px 0;
+            font-family: $Lato-Black;
+            font-weight: 700;
+            font-size: 1.5em;
+            color: $Black;
+            letter-spacing: 0.02px;
+        }
+    }
+    .userList-wrap{
+        width: 100%;
+        background-color: $Extream-light-gray;
+        ul{
+            display: flex;
+            li{
+                padding: 20px 10px;
+                color: $Light-gray;
+                font-size: 1em;
+                font-weight: 400;
+                font-family: $Lato-Regular;
+                letter-spacing: 0.02px;
+                cursor: pointer;
+            }
+            img{
+                padding: o 50px;
+            }
+        }
+    }
+    .form-wrap{
+        width: 100%;
+        background-color: $Extream-light-gray;
+        margin: 20px 0 50px 0;
+        padding: 50px 20px ;
+        @media screen and (max-width: 768px)
+        {
+            display: flex;
+            justify-content: center;
+        }
+        .form{
+            .label-wrap{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 10px;
+                .label{
+                    font-family: $Lato-Bold;
+                    font-size: 0.9em;
+                    color: $Black;
+                    margin: 5px 0;
+                    span{
+                        color: $Dark-Red;
+                    }
+                }
+                .input{
+                    width: 40%;
+                    // max-width: 525px;
+                    padding: 15px 10px;
+                    font-family: $Lato-Regular;
+                    font-weight: 400;
+                    font-size: 0.9em;
+                    color: $Black;
+                    margin: 5px 0;
+                    border: none;
+                    border-radius: 5px;
+                    border: 1px solid $border-color-gray;
+                    @media screen and (max-width: 768px){
+                        width: 100%;
+                    }
+                }
+                .location-wrap{
+                    margin: 10px 0;
+                   width: 40%;
+                    // max-width: 525px;
+                    @media screen and (max-width: 768px){
+                        width: 100%;
+                    }
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .villaOverView-wrap{
+                .heading{
+                    p{
+                    font-family: $Lato-Bold;
+                    font-size: 0.9em;
+                    color: $Black;
+                    margin: 5px 0;
+                        span{
+                            color: $Dark-Red;
+                        }
+                    }
+                }
+                .image-wrap{
+                    
+                    // max-width: 525px;
+                    width: 40%;
+                    margin: 10px 0;
+                    @media screen and (max-width: 768px){
+                        width: 100%;
+                    }
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .addAmenties-wrap{
+                // max-width: 525px;
+                width: 40%;
+                @media screen and (max-width: 768px){
+                    width: 100%;
+                }
+                .heading{
+                    display: flex;
+                    justify-content: space-between;
+                    // max-width: 400px;
+                    p{
+                        font-family: $Lato-Bold;
+                        font-size: 0.9em;
+                        color: $Black;
+                        margin: 5px 0;
+                        span{
+                            color: $Dark-Red;
+                        }
+                    }
+                    button{
+                        padding:10px 30px;
+                        border-radius: 5px;
+                        border: none;
+                        background-color: $Dark-Red;
+                        color: $White;
+                        font-family: $Lato-Light;
+                        font-weight: 400;
+                        font-size: 0.9em;
+                        cursor: pointer;
+                    }
+                }
+                .chooseFile{
+                   
+                   
+                }
+            }
+            .enterTitle-wrap{
+                width: 40%;
+                // max-width: 525px;
+                @media screen and (max-width: 768px){
+                    width: 100%;
+                }
+                .input{
+                    width: 100%;    
+                    padding: 15px 10px;
+                    font-family: $Lato-Regular;
+                    font-weight: 400;
+                    font-size: 0.9em;
+                    color: $Black;
+                    margin: 20px 0;
+                    border: none;
+                    border-radius: 5px;
+                    border: 1px solid $border-color-gray;
+                }
+            }
+            .enterPrice-wrap{
+                
+                // max-width: 400px;
+                // max-width: 525px;
+                width: 40%;
+                @media screen and (max-width: 768px){
+                    width: 100%;
+                }
+                .input{
+                    width: 100%;    
+                    padding: 15px 10px;
+                    font-family: $Lato-Regular;
+                    font-weight: 400;
+                    font-size: 0.9em;
+                    color: $Black;
+                    // margin:0 0 20px 0;
+                    border: none;
+                    border-radius: 5px;
+                    border: 1px solid $border-color-gray;
+                }
+            }
+            .uploadVillaImagea-wrap{
+                display: flex;
+                width: 40%;
+                // max-width: 525px;
+                margin: 10px 0;
+                @media screen and (max-width: 768px){
+                    width: 100%;
+                }
+                .part-left{
+                    width: 70%;
+                    p{
+                        font-family: $Lato-Bold;
+                        font-size: 0.9em;
+                        color: $Black;
+                        margin: 5px 0;
+                        span{
+                            color: $Dark-Red;
+                            font-size: 1em;
+                        }
+                    }
+                    span{
+                        font-size: 0.62em;
+                        color: $Light-gray;
+                        font-family: $Lato-Regular;
+                      
+                    }
+                }
+                .part-right{
+                    width: 30%;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    
+                    button{
+                        padding: 10px 30px;
+                        border-radius: 5px;
+                        border: none;
+                        background-color: $Dark-Red;
+                        color: #FFFFFF;
+                        font-family: "Lato-Light";
+                        font-weight: 400;
+                        font-size: 0.9em;
+                        cursor: pointer;
+                    }
+                }
+        }
+        .whichCategory-wrap{
+            width: 40%;
+            // max-width: 525px;
+            @media screen and (max-width: 768px){
+                width: 100%;
+            }
+            .input{
+                width: 100%;    
+                padding: 15px 10px;
+                font-family: $Lato-Regular;
+                font-weight: 400;
+                font-size: 0.9em;
+                color: $Black;
+                // margin:0 0 20px 0;
+                border: none;
+                border-radius: 5px;
+                border: 1px solid $border-color-gray;
+               
+            }
+        }
+        .choosefile-input-wrap{
+            width: 40%;
+            // max-width: 525px;
+            margin: 10px 0;
+            @media screen and (max-width: 768px){
+                width: 100%;
+            }
+            .choose-box{
+                width: 100%;    
+                padding: 15px 10px;
+                font-family: $Lato-Regular;
+                font-weight: 400;
+                font-size: 0.9em;
+                color: $Black;
+                // margin:0 0 20px 0;
+                border: none;
+                border-radius: 5px;
+                border: 1px solid $border-color-gray;
+                background-color: $White;
+                input{
+                    .chooseFile{
+                        border: none;
+                    }
+                }
+            }
+        }
+        .add-cancel-btn-wrap{
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            width: 40%;
+            @media screen and (max-width: 768px){
+                width: 100%;
+            }
+            .add-btn{
+                @media screen and (max-width: 768px){
+                    width: 50%;
+                }
+                
+                button{
+                  
+                    padding: 10px 30px;
+                    border-radius: 5px;
+                    border: none;
+                    background-color: $Dark-Red;
+                    color: #FFFFFF;
+                    font-family: "Lato-Light";
+                    font-weight: 400;
+                    font-size: 0.9em;
+                    cursor: pointer;
+                    @media screen and (max-width: 768px){
+                        width: 100%;
+                    }
+                    
+                }
+            }
+            .cancel-btn{
+                @media screen and (max-width: 768px){
+                    width: 50%;
+                }
+                button{
+                    width: 100%;
+                    padding: 10px 30px;
+                    border-radius: 5px;
+                    border: 1px solid $Dark-Red;
+                    background-color:$White;
+                    color: $Dark-Red;
+                    font-family: "Lato-Light";
+                    font-weight: 400;
+                    font-size: 0.9em;
+                    cursor: pointer;
+                    @media screen and (max-width: 768px){
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+}

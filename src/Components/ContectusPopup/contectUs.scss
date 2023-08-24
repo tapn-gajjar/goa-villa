@@ -1,0 +1,104 @@
+@import '../../App.scss';
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.contect-container{
+    width: 100%;
+    height: 100%;
+    // background-color: $Black;
+    background-color: rgba(0,0,0,0.3);
+    // opacity: 0.3;
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contect-popup{
+    // max-width: 559px;
+    width: 30%;
+    border-radius: 15px;
+    background-color: $White;
+    opacity: none;
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    
+    @media only screen and (max-width: 1440px){
+        width: 459px;
+    }
+    @media only screen and (max-width: 600px){
+        margin: 0 20px;
+    }
+    .heading-wrap{
+        p{
+            color: $Black;
+            font-family: $Lato-Regular;
+            font-size: 1.5em;
+            font-weight: 600;
+        }
+    }
+    .userProfile{
+        display: flex;
+        margin: 20px 0;
+        img{
+            width: 80px;
+        }
+        .name-wrap{
+            display: flex;
+            align-self: center;
+            flex-direction: column;
+            padding: 0 20px;
+            h3{
+                font-family: $Lato-Regular;
+                font-weight: 600;
+                font-size: 1.25em;
+                color: $Black;
+                margin-bottom: 15px;
+            }
+            span{
+                font-family: $Lato-Regular;
+                font-weight: 500;
+                font-size: 1em;
+                color: $Light-gray;
+                margin: 2px 0;
+            }
+        }
+    }
+    .message-wrap{
+        p{
+            font-family: $Lato-Regular;
+            font-size: 1.1em;
+            color: $Black;
+            font-weight: 600;
+        }
+    }
+    .description-wrap{
+       
+        p{
+            font-family: $Lato-Regular;
+            font-size: 0.87em;
+            color: $Light-gray;
+            line-height: 28px;
+            font-weight: 500;
+            margin: 15px 0;
+        }
+    }
+    .btn-wrap{
+        .okay-btn{
+            padding:10px 60px;
+            border-radius: 5px;
+            border: none;
+            background-color: $Dark-Red;
+            color: $White;
+            font-family: $Lato-Light;
+            font-weight: 400;
+            font-size: 0.9em;
+            cursor: pointer;
+            width: 100%;
+        }
+    }
+}

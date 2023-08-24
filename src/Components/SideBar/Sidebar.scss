@@ -1,0 +1,99 @@
+@import '../../App.scss';
+*{
+    padding: 0;
+    margin: 0;
+}
+.SidebarContainer{
+    
+    // width: 15%;
+    width: 100%;
+    background-color: $Black;
+    opacity: 0.8;
+
+    height: 100%; 
+    overflow-y:scroll;
+   
+    
+    
+    @media only screen and (max-width: 1440px){
+        // width: 260px;
+    }
+    .logo{
+        color: $White;
+        text-align: center;
+        padding: 60px 0;
+       
+        font-family: $Lato-Black;
+        font-weight: 500;
+        font-size: 1.5em;
+    }
+    .SidebarContaint{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .list-wrap{
+            display: flex;
+            width: 100%;
+            // width: 300px;
+            padding: 20px 0px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            .s-left{
+                margin: 0 2%;
+                width: 30%;
+              .img{
+                cursor: pointer;
+                
+              }
+            }
+            .s-right{
+                width: 70%;
+                justify-content: space-between;
+                display: flex;
+                p{
+                
+                    color: $White;
+                    cursor: pointer;
+                    font-size: 1em;
+                    font-weight: 500;
+                    font-family: $Lato-Regular;
+                    
+                }
+                .linkText{
+                    
+                    color: $White;
+                    cursor: pointer;
+                    font-size: 1em;
+                    font-weight: 500;
+                    font-family: $Lato-Regular;
+                }
+                img{
+                    margin-right: 40px;
+                    width: 20px;
+                }
+            }
+        
+        }
+        .list-wrap:hover{
+            background: rgba(159, 162, 180, 0.08);
+            opacity: 1;
+            .line:hover{
+                height: 100%;
+                width: 5px;
+                background-color:  #9FA2B4; 
+             }
+            
+        }
+      
+        .displayNone{
+            display: none;
+        }
+            
+
+
+    }
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
